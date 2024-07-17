@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a6dbcb;
+    color: #daecc0;
+}
+
+header {
+    background-color: rgba(236, 61, 255, 0.653);
+    color: #b4d04f;
+    text-align: center;
+    padding: 4.5em 0;
+}
+
+header h1 {
+    margin: 2;
+}
+
+
+.tm {
+    font-size: 1.0em;
+    vertical-align: super;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ea79a377;
+    box-shadow: 0 4px 8px rgba(95, 194, 230, 0.1);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+#intro h2 {
+    color: #004d40;
+}
+
+#register h2 {
+    color: #004d40;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #004d40;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus, select:focus {
+    border-color: #004d40;
+    outline: none;
+}
+
+button {
+    padding: 0.75em;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00332e;
+}
+
+#serviceList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1em;
+    width: calc(3
+    3% - 2em);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #004d40;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #004d40;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%;
+    }
+}
